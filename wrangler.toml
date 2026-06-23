@@ -1,5 +1,6 @@
 name = "fuwari"
 compatibility_date = "2025-01-01"
+workers_dev = true
 
 [assets]
 directory = "./dist"
