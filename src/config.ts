@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "Hyoroのサイト",
 	lang: "ja",
 	themeColor: {
-		hue: 100,
+		hue: 120,
 		fixed: false,
 	},
 	banner: {
