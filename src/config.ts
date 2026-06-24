@@ -65,6 +65,11 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:github",
 			url: "https://github.com/letmeslip",
 		},
+		{
+			name: "VRChat",
+			icon: "fa6-solid:vr-cardboard",
+			url: "https://vrchat.com/home/user/usr_247d2ce1-eb28-4897-81dd-fb289f4553c2",
+		},
 	],
 };
 
