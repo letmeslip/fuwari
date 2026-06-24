@@ -1,9 +1,25 @@
-# About
+---
+title: About
+---
 
-ゲームと技術が好きなHyoroのサイトです。
+## このサイトについて
 
-VRChatでよく遊んでいます。気が向いたら技術的なこととか日常とか書いていきます。
+自己紹介と備忘録、両方の性質を併せ持つサイトです♡
+自分の体験を記していきます。
 
-- GitHub: [letmeslip](https://github.com/letmeslip)
-- Twitter: [@dying_aIive](https://twitter.com/dying_aIive)
-- Steam: [jajaja_nosuke](https://steamcommunity.com/id/jajaja_nosuke)
+## 趣味・興味
+
+- **自宅サーバー**
+おそらくこのサイトのメイン。NASやスマートホームをはじめ、複数のサーバーを管理しています。
+詳細は[GitHub](https://github.com/letmeslip)に置いています。
+
+- **バイク**
+スズキのV-Strom 250に乗ってます。
+乗るのも好きだけど、自分で弄るのが楽しい。
+
+- **インテリア**
+ミニマルでシンプルな部屋を理想にしてるのに、変な雑貨を買ってしまう。
+観葉植物も好き。
+
+- **ポイ活**
+NISAから興味を持ち、気づけばクレカが増えてました。

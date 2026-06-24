@@ -48,7 +48,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.png",
 	name: "Hyoro",
-	bio: "ゲームと技術が好き。VRChatにいます。",
+	bio: "普段はVRChatにいます。 仕組みを考えたり改善するのが好き。",
 	links: [
 		{
 			name: "Twitter",
