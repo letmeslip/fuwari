@@ -292,5 +292,4 @@ GitHub Actionsで `pnpm/action-setup@v4` を使うとき、以下のように `v
 ### 今後やりたいこと
 
 - OGP画像の自動生成
-- RSSの整備
 - 記事をちゃんと書く
