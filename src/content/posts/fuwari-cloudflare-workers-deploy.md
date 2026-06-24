@@ -4,7 +4,7 @@ published: 2026-06-24
 description: "fuwariテーマのAstroブログをGitHub Actions + Cloudflare Workersで自動デプロイするまでの全記録。躓いた点も含めて。"
 tags: ["Node.js", "Astro", "Cloudflare", "GitHub"]
 category: 技術
-draft: true
+draft: false
 ---
 
 # Fuwariでポートフォリオ用サイトを準備した
@@ -35,15 +35,7 @@ gitでcloneできる環境ならwindowsとか他のpcでも良くなったのは
 
 ## 最終的な流れと構成
 
-記事を書く
-↓
-git push,commit
-↓
-GitHub Actionsで自動ビルド
-↓
-Cloudflare Workersで自動デプロイ
-↓
-そのままCloudflareが[nonrem.net](https://nonrem.net)にプロキシして表示される
+記事を書く → git push → GitHub Actionsで自動ビルド → Cloudflare Workersで自動デプロイ → nonrem.netで公開
 
 任意の端末でMarkdown記事を執筆してGitHubにプッシュすれば自動でサイトに反映される仕組み。
 ここまで手ぶらで自動化できるのにドメイン料以外が無料なのは破格でヤバい。
