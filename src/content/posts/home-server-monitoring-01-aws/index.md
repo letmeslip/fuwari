@@ -88,17 +88,23 @@ Tailscaleは、複数の端末を同じプライベートネットワークに�
 
 インストールは、[Tailscale公式サイト](https://tailscale.com/download/linux) に記載されているスクリプトを実行します。
 
-`curl -fsSL https://tailscale.com/install.sh | sh`
+```bash
+curl -fsSL https://tailscale.com/install.sh | sh
+```
 
 インストール後、Tailscaleにログインします。
 
-`sudo tailscale up`
+```bash
+sudo tailscale up
+```
 
 表示されたURLをブラウザで開き、認証を完了します。
 
 接続状態は次のコマンドで確認できます。
 
-`tailscale status`
+```bash
+tailscale status
+```
 
 ![tailscale status を実行し、aws-monitor が接続できている様子](./tailscale-status.png)
 
@@ -114,13 +120,17 @@ Dockerの詳しい仕組みや導入理由については、次回の記事で�
 
 [Docker公式サイト](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script) に記載されている簡易インストール用スクリプトを利用しました。
 
-`curl -fsSL https://get.docker.com | sudo sh`
+```bash
+curl -fsSL https://get.docker.com | sudo sh
+```
 
 しばらく待つと、Dockerのインストールが完了します。
 
 インストールできたか確認します。
 
-`docker --version`
+```bash
+docker --version
+```
 
 バージョンが表示されればOKです。
 
@@ -128,13 +138,17 @@ Dockerの詳しい仕組みや導入理由については、次回の記事で�
 
 毎回 `sudo docker ...` と入力するのは面倒なので、現在のユーザーを `docker` グループに追加します。
 
-`sudo usermod -aG docker $USER`
+```bash
+sudo usermod -aG docker $USER
+```
 
 設定を反映するため、一度ログアウトし、再度SSHで接続します。
 
 再接続後、現在のユーザーが `docker` グループに所属しているか確認します。
 
-`groups`
+```bash
+groups
+```
 
 表示されたグループ一覧の中に `docker` が含まれていればOKです。
 
@@ -142,7 +156,9 @@ Dockerの詳しい仕組みや導入理由については、次回の記事で�
 
 その後、sudoなしでDockerを実行できるか確認します。
 
-`docker run hello-world`
+```bash
+docker run hello-world
+```
 
 `Hello from Docker!` のようなメッセージが表示されれば、sudoなしでDockerを実行できるようになっています。
 
