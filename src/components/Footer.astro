@@ -11,7 +11,7 @@ const currentYear = new Date().getFullYear();
 <!--<div class="transition bg-[oklch(92%_0.01_var(&#45;&#45;hue))] dark:bg-black rounded-2xl py-8 mt-4 mb-8 flex flex-col items-center justify-center px-6">-->
 <div class="transition border-dashed border-[oklch(85%_0.01_var(--hue))] dark:border-white/15 rounded-2xl mb-12 flex flex-col items-center justify-center px-6">
     <div class="transition text-50 text-sm text-center">
-        &copy; <span id="copyright-year">{currentYear}</span> {profileConfig.name}. All Rights Reserved. /
+        <a class="secret-link" href={url('backroom/')} aria-label="秘密の入口">&copy;</a> <span id="copyright-year">{currentYear}</span> {profileConfig.name}. All Rights Reserved. /
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href={url('rss.xml')}>RSS</a> /
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href={url('sitemap-index.xml')}>Sitemap</a><br>
         Powered by
@@ -19,3 +19,21 @@ const currentYear = new Date().getFullYear();
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/saicaca/fuwari">Fuwari</a>
     </div>
 </div>
+
+<style>
+    .secret-link {
+        display: inline-block;
+        color: currentColor;
+        opacity: 1;
+        text-decoration: none;
+        transition: color 200ms ease, opacity 200ms ease, text-shadow 200ms ease;
+    }
+
+    .secret-link:hover,
+    .secret-link:focus-visible {
+        color: var(--primary);
+        opacity: 0.8;
+        text-shadow: 0 0 0.45rem var(--primary);
+        outline: none;
+    }
+</style>
