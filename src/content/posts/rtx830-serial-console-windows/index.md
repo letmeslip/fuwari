@@ -5,7 +5,7 @@ description: "安価なUSBコンソールケーブルを使い、WindowsとMacBo
 image: ""
 tags: ["RTX830", "YAMAHA", "Windows", "macOS", "PuTTY", "シリアルコンソール"]
 category: ネットワーク
-draft: true
+draft: false
 lang: ja
 ---
 
